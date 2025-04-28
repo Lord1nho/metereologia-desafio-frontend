@@ -1,0 +1,89 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/HomePage/HomePage.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.HomePage_page__LeumI {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.HomePage_page__LeumI h1 {
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.HomePage_searchbar__qhb9n {
+    background-color: aliceblue;
+    display: flex;         /* Faz os filhos ficarem em linha */
+    align-items: center;   /* Alinha verticalmente no centro */
+    gap: 8px;              /* Espaço entre input e botão */
+    padding: 8px;          /* Um espacinho interno para respirar */
+  }
+
+.HomePage_searchbar__qhb9n input {
+    width: 300px;
+    height: 40px;
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+}
+
+
+.HomePage_searchbar__qhb9n button {
+    background-color: aliceblue;
+    border: none;
+    display: flex;         /* Flex no botão também */
+    align-items: center;   /* Alinha a imagem no centro do botão */
+    justify-content: center;
+    width: 40px;           /* Deixa o botão quadradinho */
+    height: 40px;
+    cursor: pointer;       /* Mostra que é clicável */
+    outline: none;
+}
+
+
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/ResultadoPesquisa.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.ResultadoPesquisa_resultbox__M_CgQ {
+    background-color: aliceblue;
+    width: 368px;
+    height: 200px;
+    margin: 8px;
+}
+
+.ResultadoPesquisa_city__1_oBe {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.ResultadoPesquisa_city__1_oBe p {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.ResultadoPesquisa_details__CABlV {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.ResultadoPesquisa_details__CABlV p {
+    font-size: 28px;
+}
+
+.ResultadoPesquisa_details2__5Yqo0 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.ResultadoPesquisa_details2__5Yqo0 p {
+    font-size: 10px;
+}

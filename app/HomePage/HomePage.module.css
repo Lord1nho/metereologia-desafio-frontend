@@ -1,0 +1,42 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page h1 {
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.searchbar {
+    background-color: aliceblue;
+    display: flex;         /* Faz os filhos ficarem em linha */
+    align-items: center;   /* Alinha verticalmente no centro */
+    gap: 8px;              /* Espaço entre input e botão */
+    padding: 8px;          /* Um espacinho interno para respirar */
+  }
+
+.searchbar input {
+    width: 300px;
+    height: 40px;
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+}
+
+
+.searchbar button {
+    background-color: aliceblue;
+    border: none;
+    display: flex;         /* Flex no botão também */
+    align-items: center;   /* Alinha a imagem no centro do botão */
+    justify-content: center;
+    width: 40px;           /* Deixa o botão quadradinho */
+    height: 40px;
+    cursor: pointer;       /* Mostra que é clicável */
+    outline: none;
+}
+
+

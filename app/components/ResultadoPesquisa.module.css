@@ -1,0 +1,40 @@
+.resultbox {
+    background-color: aliceblue;
+    width: 368px;
+    height: 200px;
+    margin: 8px;
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.city p {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.details p {
+    font-size: 28px;
+}
+
+.details2 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.details2 p {
+    font-size: 10px;
+}
