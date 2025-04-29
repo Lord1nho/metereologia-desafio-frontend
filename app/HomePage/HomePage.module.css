@@ -39,4 +39,11 @@
     outline: none;
 }
 
+.bar {
+    width: 464px;
+    height: 1px;
+    background-color: aliceblue; /* Cor da barra, você pode mudar */
+    margin: 1.5rem 0; /* Espaço acima e abaixo da barra */
+  }
+
 

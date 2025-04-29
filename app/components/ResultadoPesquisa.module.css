@@ -1,7 +1,7 @@
 .resultbox {
     background-color: aliceblue;
     width: 368px;
-    height: 200px;
+    height: auto;
     margin: 8px;
 }
 
@@ -12,8 +12,15 @@
     padding-right: 16px;
 }
 
+.city button {
+    background-color: aliceblue;
+    border: none;
+    width: auto;
+    cursor: pointer;
+}
+
 .city p {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -36,5 +43,6 @@
 }
 
 .details2 p {
-    font-size: 10px;
+    font-size: 14px;
 }
+

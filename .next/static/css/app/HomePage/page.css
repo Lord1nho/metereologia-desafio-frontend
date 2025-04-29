@@ -1,3 +1,55 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/ResultadoPesquisa.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.ResultadoPesquisa_resultbox__M_CgQ {
+    background-color: aliceblue;
+    width: 368px;
+    height: auto;
+    margin: 8px;
+}
+
+.ResultadoPesquisa_city__1_oBe {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.ResultadoPesquisa_city__1_oBe button {
+    background-color: aliceblue;
+    border: none;
+    width: auto;
+    cursor: pointer;
+}
+
+.ResultadoPesquisa_city__1_oBe p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ResultadoPesquisa_details__CABlV {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.ResultadoPesquisa_details__CABlV p {
+    font-size: 28px;
+}
+
+.ResultadoPesquisa_details2__5Yqo0 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.ResultadoPesquisa_details2__5Yqo0 p {
+    font-size: 14px;
+}
+
+
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/HomePage/HomePage.module.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
@@ -42,48 +94,45 @@
     outline: none;
 }
 
+.HomePage_bar__o42Vz {
+    width: 464px;
+    height: 1px;
+    background-color: aliceblue; /* Cor da barra, você pode mudar */
+    margin: 1.5rem 0; /* Espaço acima e abaixo da barra */
+  }
 
 
-/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/ResultadoPesquisa.module.css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************/
-.ResultadoPesquisa_resultbox__M_CgQ {
-    background-color: aliceblue;
-    width: 368px;
-    height: 200px;
-    margin: 8px;
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/components/CapitaisInfo.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.CapitaisInfo_content__6QG9D {
+width: 368px;
 }
 
-.ResultadoPesquisa_city__1_oBe {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 16px;
-    padding-right: 16px;
-}
+.CapitaisInfo_content__6QG9D h2 {
+    color: aliceblue;
+    }
 
-.ResultadoPesquisa_city__1_oBe p {
-    font-size: 10px;
-    font-weight: 600;
-}
-
-.ResultadoPesquisa_details__CABlV {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.ResultadoPesquisa_details__CABlV p {
-    font-size: 28px;
-}
-
-.ResultadoPesquisa_details2__5Yqo0 {
+.CapitaisInfo_info_box__xYtA0 {
     display: flex;
     flex-direction: row;
-    gap: 24px;
 }
 
-.ResultadoPesquisa_details2__5Yqo0 p {
-    font-size: 10px;
+.CapitaisInfo_info__QhYUi {
+    display: grid;
+    grid-template-columns: auto auto 140px auto auto 140px; 
+    margin-right: auto;
 }
+
+.CapitaisInfo_data__0Bdhl{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.CapitaisInfo_column__l8F6x {
+    font-weight:300;
+}
+
+

@@ -1,0 +1,29 @@
+.content {
+width: 368px;
+}
+
+.content h2 {
+    color: aliceblue;
+    }
+
+.info_box {
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto 140px auto auto 140px; 
+    margin-right: auto;
+}
+
+.data{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.column {
+    font-weight:300;
+}
+

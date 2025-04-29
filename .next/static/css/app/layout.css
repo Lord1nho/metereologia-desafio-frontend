@@ -73,6 +73,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+    height: -moz-fit-content;
+    height: fit-content;
+    background: orange
   }
