@@ -1,20 +1,55 @@
-import React from 'react';
+"use client"
+
+import React, { useEffect, useState } from 'react';
 import styles from "./CapitaisInfo.module.css"
 
 const CapitaisInfo = () => {
 
-    const capitais = [
-        { cidade: 'Rio de Janeiro', min: '18°', max: '27°' },
-        { cidade: 'São Paulo', min: '14°', max: '22°' },
-        { cidade: 'Belo Horizonte', min: '21°', max: '32°' },
-        { cidade: 'Brasília', min: '24°', max: '37°' },
-        { cidade: 'Belém', min: '24°', max: '37°' },
-        { cidade: 'Salvador', min: '23°', max: '37°' },
-        { cidade: 'Curitiba', min: '5°', max: '14°' },
-        { cidade: 'Fortaleza', min: '21°', max: '32°' },
-        { cidade: 'Manaus', min: '24°', max: '37°' },
-        { cidade: 'João Pessoa', min: '28°', max: '40°' },
-      ];
+
+  const [clima, setClima] = useState(null);
+  const [erro, setErro] = useState(null);
+  const [capitais, setCapitais] = useState([
+    { cidade: 'Rio de Janeiro', min: '', max: '' },
+    { cidade: 'São Paulo', min: '', max: '' },
+    { cidade: 'Belo Horizonte',min: '', max: ''  },
+    { cidade: 'Brasília', min: '', max: ''  },
+    { cidade: 'Belém', min: '', max: ''  },
+    { cidade: 'Salvador', min: '', max: ''  },
+    { cidade: 'Curitiba', min: '', max: ''  },
+    { cidade: 'Fortaleza', min: '', max: ''  },
+    { cidade: 'Manaus', min: '', max: ''  },
+    { cidade: 'João Pessoa', min: '', max: ''  },
+  ]);
+
+
+  useEffect(() => {
+    const buscarClima = async () => {
+      const API_KEY = 'da3d06defac28e58b1559b364de4bee6';
+  
+      try {
+        const response = await Promise.all(
+          capitais.map(async (capitais) => {
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${capitais.cidade}&appid=${API_KEY}&units=metric&lang=pt_br` 
+            const response = await fetch(url);
+            if (!response.ok) throw new Error("ERRO");
+            const dados = await response.json();
+            return {
+              ...capitais,
+              min: `${Math.round(dados.main.temp_min)}`,
+              max: `${Math.round(dados.main.temp_max)}`
+            }
+          })
+        );
+        setCapitais(response);
+      } catch (error) {
+        setErro('Erro ao buscar clima');
+        setClima(null);
+      }
+  
+    };
+    buscarClima(); // ou acione via botão
+  }, []);
+
   return (
     <section className={styles.content}>
         <h2>Capitais</h2>

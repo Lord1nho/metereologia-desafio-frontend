@@ -46,3 +46,21 @@
     font-size: 14px;
 }
 
+
+.bar {
+    width: 464px;
+    height: 1px;
+    background-color:orange; /* Cor da barra, você pode mudar */
+    margin: auto;
+  }
+
+  .infoweek {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* uma coluna por dia */
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+  
+

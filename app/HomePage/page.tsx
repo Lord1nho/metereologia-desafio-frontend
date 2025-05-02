@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "./HomePage.module.css"
 import ResultadoPesquisa from '../components/ResultadoPesquisa';
 import CapitaisInfo from '../components/CapitaisInfo';
 
+
 const HomePage = () => {
+
+
   return (
   <div className={styles.page}>
     <h1>Previsão do Tempo</h1>
     <ResultadoPesquisa/>
+    
     <div className={styles.searchbar}>
         
         <input type='text' placeholder='Insira aqui o nome da cidade'/>
