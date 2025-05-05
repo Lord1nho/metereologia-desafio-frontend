@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "./ResultadoPesquisa.module.css"
 
 
-const ResultadoPesquisa = () => {
+const ResultadoPesquisa = ({ dados, cidade}) => {
 
     const temperaturas = [
         { diaSemana: 'Terça', min: '18°', max: '27°' },
@@ -13,22 +13,23 @@ const ResultadoPesquisa = () => {
         { diaSemana: 'Sexta', min: '24°', max: '37°' },
       ];
 
+      if (!dados) return null; // nada é exibido até que dados exista
   return (
   <div className={styles.resultbox}>
     <div className={styles.city}>
-        <p>Lorem Ipsum, RJ - Brasil</p>
+        <p>{cidade} - Brasil</p>
         <button><img src="/assets/cruz.svg" alt="Ícone de procurar" width={8} height={12}/></button>
     </div>
     <div className={styles.details}>
-    <p>20°C Nublado</p>
+    <p>{Math.round(dados.temperatura)}°C {dados.tempo}</p>
     <div className={styles.details2}>
-        <p>16°C</p>
-        <p>25°C</p>
-        <p>Sensação: 19°C</p>
+        <p>{Math.round(dados.minima)}°C</p>
+        <p>{Math.round(dados.maxima)}°C</p>
+        <p>Sensação: {Math.round(dados.sensacao)}°C</p>
     </div>
     <div className={styles.details2}>
-        <p>Vento: 18km</p>
-        <p>Umidade: 89%</p>
+        <p>Vento: {Math.round(dados.vento)}km/h</p>
+        <p>Umidade: {Math.round(dados.umidade)}%</p>
     </div>
     </div>
     <div className={styles.bar}></div>

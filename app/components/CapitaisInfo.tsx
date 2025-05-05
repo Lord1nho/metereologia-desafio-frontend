@@ -35,8 +35,8 @@ const CapitaisInfo = () => {
             const dados = await response.json();
             return {
               ...capitais,
-              min: `${Math.round(dados.main.temp_min)}`,
-              max: `${Math.round(dados.main.temp_max)}`
+              min: `${Math.round(dados.main.temp_min)}°`,
+              max: `${Math.round(dados.main.temp_max)}°`
             }
           })
         );
