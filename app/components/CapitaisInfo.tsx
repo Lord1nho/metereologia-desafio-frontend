@@ -9,16 +9,16 @@ const CapitaisInfo = () => {
   const [clima, setClima] = useState(null);
   const [erro, setErro] = useState(null);
   const [capitais, setCapitais] = useState([
-    { cidade: 'Rio de Janeiro', min: '', max: '' },
-    { cidade: 'São Paulo', min: '', max: '' },
-    { cidade: 'Belo Horizonte',min: '', max: ''  },
-    { cidade: 'Brasília', min: '', max: ''  },
-    { cidade: 'Belém', min: '', max: ''  },
-    { cidade: 'Salvador', min: '', max: ''  },
-    { cidade: 'Curitiba', min: '', max: ''  },
-    { cidade: 'Fortaleza', min: '', max: ''  },
-    { cidade: 'Manaus', min: '', max: ''  },
-    { cidade: 'João Pessoa', min: '', max: ''  },
+    { cidade: 'Rio de Janeiro', min: '-', max: '-' },
+    { cidade: 'São Paulo', min: '-', max: '-' },
+    { cidade: 'Belo Horizonte',min: '-', max: '-'  },
+    { cidade: 'Brasília', min: '-', max: '-'  },
+    { cidade: 'Belém', min: '-', max: '-' },
+    { cidade: 'Salvador', min: '-', max: '-' },
+    { cidade: 'Curitiba', min:'-', max: '-'  },
+    { cidade: 'Fortaleza', min: '-', max: '-'  },
+    { cidade: 'Manaus', min: '-', max: '-'  },
+    { cidade: 'João Pessoa', min: '-', max:'-'  },
   ]);
 
 

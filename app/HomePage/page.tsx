@@ -6,6 +6,7 @@ import ResultadoPesquisa from '../components/ResultadoPesquisa';
 import CapitaisInfo from '../components/CapitaisInfo';
 
 
+
 const HomePage = () => {
   const [cidade, setCidade] = useState('');
   const [info, setInfo] = useState(null);
@@ -18,6 +19,7 @@ const HomePage = () => {
       console.log(response);
       const dados = await response.json();
       console.log(dados);
+      const city = dados.name;
       const temperatura = dados.main.temp;
       const sensacao = dados.main.feels_like;
       const minima = dados.main.temp_min;
@@ -25,15 +27,17 @@ const HomePage = () => {
       const vento = dados.wind.speed;
       const tempo = dados.weather[0].description;
       const umidade = dados.main.humidity;
-      
+      const country = dados.sys.country;
       setInfo({
+        city,
         temperatura,
         sensacao,
         minima,
         maxima,
         vento,
         tempo,
-        umidade
+        umidade,
+        country
       });
     }
     catch (err) {
@@ -41,10 +45,15 @@ const HomePage = () => {
     }
   }
 
+  const closeBox = () => {
+    setInfo(null);
+    setCidade('');
+  }
   return (
   <div className={styles.page}>
-    <h1>Previsão do Tempo</h1>
-    <ResultadoPesquisa dados={info} cidade={cidade}/>
+    <h1>Previsão do Tempo</h1>{
+      info && <ResultadoPesquisa dados={info} onClose={closeBox}/>
+    }
     <div className={styles.searchbar}>
     <input
         type="text"
