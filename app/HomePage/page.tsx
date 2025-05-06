@@ -13,9 +13,9 @@ const HomePage = () => {
   
   const buscarCidade = async (cidade:string) => {
     try {
-      const apiKey = 'da3d06defac28e58b1559b364de4bee6'
+      const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
       const cidadereq = encodeURIComponent(cidade);
-      const response = await fetch (`https://api.openweathermap.org/data/2.5/weather?q=${cidadereq}&appid=${apiKey}&lang=pt_br&units=metric`);
+      const response = await fetch (`https://api.openweathermap.org/data/2.5/weather?q=${cidadereq},BR&appid=${API_KEY}&lang=pt_br&units=metric`);
       console.log(response);
       const dados = await response.json();
       console.log(dados);

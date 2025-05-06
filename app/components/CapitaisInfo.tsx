@@ -24,12 +24,12 @@ const CapitaisInfo = () => {
 
   useEffect(() => {
     const buscarClima = async () => {
-      const API_KEY = 'da3d06defac28e58b1559b364de4bee6';
+      const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
   
       try {
         const response = await Promise.all(
           capitais.map(async (capitais) => {
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${capitais.cidade}&appid=${API_KEY}&units=metric&lang=pt_br` 
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${capitais.cidade},BR&appid=${API_KEY}&units=metric&lang=pt_br` 
             const response = await fetch(url);
             if (!response.ok) throw new Error("ERRO");
             const dados = await response.json();
