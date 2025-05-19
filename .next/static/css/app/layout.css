@@ -75,7 +75,9 @@ html, body {
     padding: 0;
     height: -moz-fit-content;
     height: fit-content;
-    background: orange
+    background: orange;
+    overflow-x: hidden;
   }
+
 
   

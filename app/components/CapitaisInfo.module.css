@@ -27,3 +27,17 @@ width: 368px;
     font-weight:300;
 }
 
+
+@media (max-width: 465px) {
+    .info {
+    display: grid;
+    grid-template-columns: auto auto 120px auto auto 120px; 
+    margin-right: auto;
+}
+
+.data{
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+}

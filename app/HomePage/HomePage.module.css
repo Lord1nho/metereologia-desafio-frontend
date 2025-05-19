@@ -46,4 +46,19 @@
     margin: 1.5rem 0; /* Espaço acima e abaixo da barra */
   }
 
+@media (max-width: 465px) {
+    .page h1 {
+    color: aliceblue;
+    font-size: 25px;
+    white-space: nowrap;
+    
+}
 
+.searchbar {
+    background-color: aliceblue;
+    display: flex;         /* Faz os filhos ficarem em linha */
+    justify-content: space-around;
+    width: 100%;
+  }
+
+}

@@ -63,4 +63,12 @@
     font-weight: 600;
 }
   
+@media (max-width: 475px) {
+.resultbox {
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+}
+
+}
 
