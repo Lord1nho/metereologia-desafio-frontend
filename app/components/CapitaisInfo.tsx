@@ -25,7 +25,6 @@ const CapitaisInfo = () => {
   useEffect(() => {
     const buscarClima = async () => {
       const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-  
       try {
         const response = await Promise.all(
           capitais.map(async (capitais) => {

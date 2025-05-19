@@ -41,7 +41,7 @@ const HomePage = () => {
       });
     }
     catch (err) {
-      alert('ERRO');
+      alert('Erro em requisição. Tente novamente');
     }
   }
 
